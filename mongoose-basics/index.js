@@ -18,9 +18,8 @@ A: You must create a new user and password for each mongodb database. This is
 
 // mongodb javascript adapter NPM module
 var mongoose = require('mongoose');
-// MongoDB Models
+// Import the Employee Model, located in the local models/ folder
 var EmployeeModel = require('./models/employee-model');
-var HardwareModel = require('./models/hardware-model');
 
 // REPLACE THIS
 var mongoURL = 'mongodb://dev:dev@ds031632.mongolab.com:31632/mongodev';
