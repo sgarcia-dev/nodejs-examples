@@ -1,4 +1,4 @@
-var UserModel = require.main.require('./models/user.js');
+var UserModel = require('../model/user');
 
 var UserCRUD = {
     createUser: createUser,
@@ -6,7 +6,8 @@ var UserCRUD = {
     getUsers: getUsers,
     getAllUsers: getAllUsers,
     editUser: editUser,
-    deleteUser: deleteUser
+    deleteUser: deleteUser,
+    model: UserModel
 };
 
 function createUser(name, surname, age, married, onComplete) {

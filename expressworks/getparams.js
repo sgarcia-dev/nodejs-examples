@@ -10,4 +10,5 @@ app.get('/search', function(req, res){
 	var query = req.query
 	res.send(query) // outputs json
 })
+
 app.listen(port);
